@@ -1,7 +1,7 @@
 # Khanh Lam's Building Porfolio
 
 ## Purpose
-A website that portrait owner's biography, work, contact and experiences.
+A website that portraits owner's biography, works, contact information and experiences.
 
 ## Built With
 * HTML
