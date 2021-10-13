@@ -29,10 +29,11 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     background-repeat: no-repeat;
+    z-index: 9999;
 }
 header h1 {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 55px;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
@@ -56,7 +57,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 30px;
     font-weight: lighter;
-    font-size: 1.75vw;
+    font-size: 35px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
     color: var(--main-color1)
 }
@@ -103,7 +104,7 @@ header nav ul li a:hover {
 }
 .bio h2 {
     flex: 1 20%;
-    font-size: 45px;
+    font-size: 55px;
     text-align: right;
     border-right: var(--main-color2) solid 7px;
     padding-right: 50px;
@@ -147,7 +148,7 @@ header nav ul li a:hover {
 }
 .work h2 {
     flex: 1 20%;
-    font-size: 45px;
+    font-size: 55px;
     text-align: right;
     border-right: var(--main-color2) solid 7px;
     padding-right: 50px;
@@ -207,7 +208,6 @@ header nav ul li a:hover {
     background-color: var(--main-color1);
     border-left: none;
     padding-right: 10px;
-    z-index: 9999;
 }
 /* WORK END */
 
@@ -236,7 +236,6 @@ header nav ul li a:hover {
     align-items: center;
 }
 .contact-item a {
-    padding: 10px 20px;
     font-size: 25px;
     text-decoration: none;
     color: black;
@@ -250,7 +249,7 @@ header nav ul li a:hover {
 
 /* Utilities */
 section {
-    padding: 60px;
+    padding: 30px;
 }
 .work-title {
     font-weight: bold;
@@ -258,4 +257,142 @@ section {
 }
 .quote {
     color: var(--main-color2);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+header nav ul {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+    
+header nav ul li a {
+    font-size: 30px;
+}
+.hero {
+    height: 25vw;
+    justify-content: center;
+    align-items: center;
+}
+.bio h2 {
+    flex: 1 15%;
+    text-align: center;
+}
+.bio-info {
+    flex: 2 85%;
+}
+.bio-img, .bio-text {
+    flex: 100%;
+}
+.bio-img, .bio-text {
+    text-align: center;
+}
+.work h2 {
+    flex: 1 15%;
+    padding-right: 70px;
+}
+.work-items {
+    flex: 2 85%;
+}
+.work-items a {
+    margin-right: 20px;
+}
+.contact h2 {
+    flex: 1 15%;
+    font-size: 40px;
+    text-align: center;
+    padding-right: 35px;
+}
+.contact-info {
+    flex: 2 85%;
+}
+.contact-item a {
+    font-size: 20px;
+}
+   
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+header h1, header nav {
+    width: 100%;
+}
+header nav ul {
+    width: 100%;
+}
+header nav ul li a {
+    font-size: 25px;
+    padding: 10px 15px;
+}
+.hero {
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+.work-items a {
+    margin: 20px 20px 0 0;
+}
+.contact-item a {
+   flex: 100%;
+   padding: 5px 20px;
+}
+.contact-info {
+    flex-direction: column;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 575px) {
+header h1, header nav {
+    width: 100%;
+}
+header nav ul li a {
+    font-size: 25px;
+    padding: 10px 10px;
+}
+.bio h2 {
+    flex: 1 10%;
+    text-align: center;
+    font-size: 30px;
+}
+.bio-info {
+    flex: 2 90%;
+}
+.bio-img, .bio-text {
+    flex: 100%;
+    text-align: center;
+}
+.bio-text p {
+    font-size: 17px;
+}
+.work h2 {
+    flex: 1 10%;
+    padding-right: 70px;
+    font-size: 30px;
+}
+.work-items {
+    flex: 2 90%;
+}
+.work-items a {
+    margin-right: 20px;
+}
+.contact h2 {
+    flex: 1 10%;
+    font-size: 30px;
+    text-align: center;
+    padding-right: 30px;
+}
+.contact-info {
+    flex: 2 90%;
+    margin-left: -20px;
+    flex-direction: column;
+}
+.contact-item a {
+    font-size: 17px;
 }
