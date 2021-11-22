@@ -202,6 +202,24 @@ header nav ul li a:hover {
 .work-items a:nth-child(5) {
     background-image: url("../images/horiseon-ss.png");
 }
+.work-items a:nth-child(6) {
+    background-image: url("../images/password-generator-ss.png");
+}
+.work-items a:nth-child(7) {
+    background-image: url("../images/code-quiz-ss.png");
+}
+.work-items a:nth-child(8) {
+    background-image: url("../images/weather-dashboard-ss.png");
+}
+.work-items a:nth-child(9) {
+    background-image: url("../images/workday-scheduler-ss.png");
+}
+.work-items a:nth-child(10) {
+    background-image: url("../images/destination-unknown-ss.png");
+    flex: 1 100%;
+    height: 350px;
+    margin-top: 0;
+}
 .work-items a p {
     width: auto;
     text-align: left;
