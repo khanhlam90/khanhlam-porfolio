@@ -220,6 +220,12 @@ header nav ul li a:hover {
     height: 350px;
     margin-top: 25px;
 }
+.work-items a:nth-child(11) {
+    background-image: url("../images/icocina-ss.png");
+    flex: 1 100%;
+    height: 350px;
+    margin-top: 25px;
+}
 .work-items a p {
     width: auto;
     text-align: left;
